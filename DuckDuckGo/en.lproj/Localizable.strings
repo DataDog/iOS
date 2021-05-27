@@ -277,6 +277,9 @@
 /* Email option title in the browsing menu */
 "email.browsingMenu.useNewDuckAddress" = "Create a Duck Address";
 
+/* Signed out state for the email feature */
+"email.settings.off" = "Off";
+
 /* Empty list state placholder */
 "empty.bookmarks" = "No bookmarks added yet";
 

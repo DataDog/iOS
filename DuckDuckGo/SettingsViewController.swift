@@ -164,10 +164,9 @@ class SettingsViewController: UITableViewController {
     
     private func configureEmail() {
         if emailManager.isSignedIn {
-            emailCell.isHidden = false
             emailAccessoryText.text = emailManager.userEmail
         } else {
-            emailCell.isHidden = true
+            emailAccessoryText.text = UserText.emailSettingsOff
         }
     }
      
@@ -216,9 +215,7 @@ class SettingsViewController: UITableViewController {
             showDebug()
             
         case emailCell:
-            if emailManager.isSignedIn {
-                performSegue(withIdentifier: "showEmail", sender: self)
-            }
+            performSegue(withIdentifier: "showEmail", sender: self)
 
         default: break
         }
