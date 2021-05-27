@@ -213,9 +213,6 @@ class SettingsViewController: UITableViewController {
 
         case versionCell:
             showDebug()
-            
-        case emailCell:
-            performSegue(withIdentifier: "showEmail", sender: self)
 
         default: break
         }
